@@ -1,115 +1,118 @@
 body {
   background: #dcbb9a; }
   body div#content {
-    height: 2500px;
+    height: 2600px;
     display: block;
     background: #ffffff;
     margin: 0 15%;
-    padding: 5px 20px; }
+    padding: 5px 20px;
+    color: #000000; }
     body div#content h1 {
       color: #893c00;
       display: block;
-      margin-left: 40%; }
+      text-transform: none;
+      text-align: center; }
     body div#content h2 {
       color: #893c00; }
-  body .img-left {
-    display: block;
-    float: left;
-    box-sizing: border-box;
-    margin: 0px 15px 10px 0px;
-    padding: 2px;
-    border: 2px solid #893c00;
-    width: auto; }
-  body .img-right {
-    display: block;
-    float: right;
-    box-sizing: border-box;
-    padding: 2px;
-    margin: 0px 0px 10px 10px;
-    border: 2px solid #893c00; }
+    body div#content .img-left {
+      display: block;
+      float: left;
+      margin: 0px 15px 10px 0px;
+      padding: 2px;
+      border: 2px solid #893c00;
+      width: auto; }
+    body div#content .img-right {
+      display: block;
+      float: right;
+      padding: 2px;
+      margin: 0px 0px 10px 10px;
+      border: 2px solid #893c00; }
   body table {
-    border: 1 px solid #e0e0e0; }
+    border: #e0e0e0;
+    background: none;
+    width: auto; }
     body table th, body table td {
       border-bottom: 1px solid #e0e0e0;
       padding: 10px 0 10px 20px; }
     body table caption {
-      text-align: right; }
+      text-align: right;
+      color: #000000; }
     body table th {
       text-transform: uppercase;
       background-color: #e0e0e0;
       text-align: left;
       font-weight: normal; }
-
-p {
-  font-size: 16px; }
-
-.brief {
-  display: inline-block;
-  float: left;
-  background-color: #fadcba;
-  width: 40%;
-  margin: 0 15px 0 0;
-  padding: 20px 20px; }
-
-form {
-  color: #808080;
-  margin-left: -5px; }
-  form label[for=fname] {
-    display: block;
+  body p {
+    font-size: 16px; }
+  body a {
+    color: #3d70a1; }
+  body .brief {
+    display: inline-block;
     float: left;
-    margin-left: 5px; }
-  form input[type=text] {
-    width: 46%;
-    display: block;
-    float: left;
-    margin: 5px 0 5px 5px;
-    border: 1px solid #e0e0e0;
-    padding: 5px; }
-  form label[for=lname] {
-    display: block;
-    float: left;
-    margin-left: 44%; }
-  form label[for=email] {
-    display: block;
-    float: left;
-    margin-left: 5px; }
-  form input[type=email] {
-    width: 94%;
-    display: block;
-    float: left;
-    margin: 5px 0 5px 5px;
-    border: 1px solid #e0e0e0;
-    padding: 5px; }
-  form label[for=mark] {
-    display: block;
-    float: left;
-    margin-top: 6px;
-    margin-left: 5px; }
-  form input[name="mark"] {
-    width: 94%;
-    display: block;
-    float: left; }
-  form label[for=subject] {
-    display: block;
-    float: left;
-    margin-left: 5px; }
-  form textarea[id=subject] {
-    display: block;
-    float: left;
-    width: 95%;
-    height: 120px;
-    box-sizing: border-box;
-    margin: 5px 0 5px 5px;
-    border: 1px solid #e0e0e0;
-    padding: 5px; }
-  form input[type=submit] {
-    font-size: 16px;
-    display: block;
-    float: left;
-    background-color: white;
-    border: 1px solid #3d70a1;
-    color: #3d70a1;
-    padding: 14px 70px;
-    text-decoration: none;
-    margin: 20px 0 0 5px;
-    cursor: pointer; }
+    background-color: #fadcba;
+    width: 40%;
+    margin: 0 15px 0 0;
+    padding: 20px 20px;
+    color: #000000; }
+  body form {
+    color: #808080;
+    margin-left: -5px;
+    width: 106%; }
+    body form label[for=fname] {
+      display: block;
+      float: left;
+      margin-left: 5px; }
+    body form input[type=text] {
+      width: 46.2%;
+      display: block;
+      float: left;
+      margin: 5px 0 5px 5px;
+      border: 1px solid #e0e0e0;
+      padding: 5px; }
+    body form label[for=lname] {
+      display: block;
+      float: left;
+      margin-left: 44.5%; }
+    body form label[for=email] {
+      display: block;
+      float: left;
+      margin-left: 5px; }
+    body form input[type=email] {
+      width: 94%;
+      display: block;
+      float: left;
+      margin: 5px 0 5px 5px;
+      border: 1px solid #e0e0e0;
+      padding: 5px; }
+    body form label[for=mark] {
+      display: block;
+      float: left;
+      margin-top: 6px;
+      margin-left: 5px; }
+    body form input[name="mark"] {
+      width: 94%;
+      display: block;
+      float: left; }
+    body form label[for=subject] {
+      display: block;
+      float: left;
+      margin-left: 5px; }
+    body form textarea[id=subject] {
+      display: block;
+      float: left;
+      width: 94%;
+      height: 120px;
+      margin: 5px 0 5px 5px;
+      border: 1px solid #e0e0e0;
+      padding: 5px; }
+    body form input[type=submit] {
+      font-size: 16px;
+      display: block;
+      float: left;
+      background-color: white;
+      border: 1px solid #3d70a1;
+      color: #3d70a1;
+      padding: 14px 70px;
+      text-decoration: none;
+      margin: 20px 0 0 5px;
+      cursor: pointer; }

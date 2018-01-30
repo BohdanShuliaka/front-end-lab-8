@@ -1,45 +1,49 @@
 body {
     background: $canvas-color;
     div#content {
-        height: 2500px;
+        height: 2600px;
         display: block;
         background: $background-color;
-        margin: 0 15%;
+        margin: $content-margin;
         padding: 5px 20px;
+        color: $text-color;
         h1 {
             color: $headings-color;
             display: block;
-            margin-left: 40%;
+            text-transform: $textTransform;
+            text-align: center;
         }
         h2 {
             color: $headings-color;
         }
-    }
-    .img-left {
-        display: block;
-        float: left;
-        box-sizing: border-box;
-        margin: 0px 15px 10px 0px;
-        padding: 2px;
-        border: 2px solid $headings-color;
-        width: auto;
-    }
-    .img-right {
-        display: block;
-        float: right;
-        box-sizing: border-box; 
-        padding: 2px;
-        margin: 0px 0px 10px 10px;
-        border: 2px solid $headings-color;
+    
+        .img-left {
+            display: block;
+            float: left;
+            margin: 0px 15px 10px 0px;
+            padding: 2px;
+            border: 2px solid $headings-color;
+            width: auto;
+        }
+        .img-right {
+            display: block;
+            float: right;
+            padding: 2px;
+            margin: 0px 0px 10px 10px;
+            border: 2px solid $headings-color;
+        }
     }
     table {
-        border: 1 px solid $form-color;
+        border: $form-color;
+        background: $someColor;
+        width: $tabbleWidth;
         th, td {
             border-bottom: 1px solid $form-color;
             padding: 10px 0 10px 20px;    
         }
         caption {
             text-align: right;
+            color: $text-color2;
         }
         th {
             text-transform: uppercase;
@@ -47,96 +51,93 @@ body {
             text-align: left;
             font-weight: normal;
         }
-        }
-      
-    
-}
-p {
-    font-size: $fSize;
-}
-@mixin briefDesign {
-    .brief {
-    display: inline-block;
-    float: left;
-    background-color: $text-block-color;
-    width: $briefWidth;
-    margin: 0 15px 0 0;
-    padding: 20px 20px;
     }
-    
-}
-@include briefDesign;
-form {
-    color: $table-head-color;
-    margin-left: -5px;
-    label[for=fname] {
-        display: block;
-        float: left;
-        margin-left: 5px;
-    }
-    input[type=text] {
-        width: 46%;
-        display: block;
-        float: left;
-        margin: 5px 0 5px 5px;
-        border: 1px solid $form-color;
-        padding: 5px;
-    }
-    label[for=lname] {
-        display: block; 
-        float: left;
-        margin-left: 44%;
-    }
-    label[for=email] {
-        display: block;
-        float: left; 
-        margin-left: 5px;
-    }
-    input[type=email] {
-        width: 94%;
-        display: block;
-        float: left;
-        margin: 5px 0 5px 5px;
-        border: 1px solid $form-color;
-        padding: 5px;
-    }
-    label[for=mark] {
-        display: block;
-        float: left; 
-        margin-top: 6px;
-        margin-left: 5px;
-    }
-    input[name="mark"] {
-        width: 94%;
-        display: block;
-        float: left;
-    }
-    label[for=subject] {
-        display: block;
-        float: left; 
-        margin-left: 5px;
-    }
-    textarea[id=subject] {
-        display: block;
-        float: left; 
-        width: 95%;
-        height: 120px;
-        box-sizing: border-box;
-        margin: 5px 0 5px 5px;
-        border: 1px solid $form-color;
-        padding: 5px;
-    }
-    input[type=submit] {
-        font-size: $fSize;
-        display: block;
-        float: left;
-        background-color: white;
-        border: 1px solid $links-color;
-        color: $links-color;
-        padding: 14px 70px;
-        text-decoration: none;
-        margin: 20px 0 0 5px;
-        cursor: pointer;
-    }
-}
 
+    p {
+        font-size: $fSize;
+    }
+    a {
+        color: $links-color;
+    }
+    @mixin briefDesign {
+        .brief {
+        display: inline-block;
+        float: left;
+        background-color: $text-block-color;
+        width: $briefWidth;
+        margin: $briefMargin;
+        padding: 20px 20px;
+        color: $text-color2;
+        }   
+    }
+    @include briefDesign;
+
+    @mixin inputPos {
+        display: block;
+        float: left;
+    }
+    form {
+        color: $table-head-color;
+        margin-left: -5px;
+        width: $formWidth;
+        label[for=fname] {
+        @include inputPos;
+            margin-left: 5px;
+        }
+        input[type=text] {
+            width: 46.2%;
+            @include inputPos;
+            margin: 5px 0 5px 5px;
+            border: 1px solid $form-color;
+            padding: 5px;
+        }
+        label[for=lname] {
+            @include inputPos;
+            margin-left: 44.5%;
+        }
+        label[for=email] {
+            @include inputPos; 
+            margin-left: 5px;
+        }
+        input[type=email] {
+            width: 94%;
+            @include inputPos;
+            margin: 5px 0 5px 5px;
+            border: 1px solid $form-color;
+            padding: 5px;
+        }
+        label[for=mark] {
+            @include inputPos; 
+            margin-top: 6px;
+            margin-left: 5px;
+        }
+        input[name="mark"] {
+            width: 94%;
+            @include inputPos;
+        }
+        label[for=subject] {
+            @include inputPos; 
+            margin-left: 5px;
+        }
+        textarea[id=subject] {
+            @include inputPos; 
+            width: 94%;
+            height: 120px;
+            margin: 5px 0 5px 5px;
+            border: 1px solid $form-color;
+            padding: 5px;
+        }
+        input[type=submit] {
+            font-size: $fSize;
+            @include inputPos;
+            background-color: $buttonBack;
+            border: 1px solid $links-color;
+            color: $links-color;
+            padding: 14px 70px;
+            text-decoration: none;
+            margin: 20px 0 0 5px;
+            cursor: pointer;
+        }
+    }
+
+}

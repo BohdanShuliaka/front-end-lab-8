@@ -1,67 +1,118 @@
-/*
-Error: Undefined variable: "$fSize".
-        on line 55 of C:/FRONT END/Projects/epam/homework_03/scss/_main.scss
-        from line 2 of C:\FRONT END\Projects\epam\homework_03\scss\style2.scss
-
-Backtrace:
-C:/FRONT END/Projects/epam/homework_03/scss/_main.scss:55
-C:\FRONT END\Projects\epam\homework_03\scss\style2.scss:2
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$fSize\".\A         on line 55 of C:/FRONT END/Projects/epam/homework_03/scss/_main.scss\A         from line 2 of C:\FRONT END\Projects\epam\homework_03\scss\style2.scss"; }
+body {
+  background: rgba(198, 238, 252, 0.53); }
+  body div#content {
+    height: 2600px;
+    display: block;
+    background: #3b3b3b;
+    margin: 0 10%;
+    padding: 5px 20px;
+    color: white; }
+    body div#content h1 {
+      color: #fccd10;
+      display: block;
+      text-transform: uppercase;
+      text-align: center; }
+    body div#content h2 {
+      color: #fccd10; }
+    body div#content .img-left {
+      display: block;
+      float: left;
+      margin: 0px 15px 10px 0px;
+      padding: 2px;
+      border: 2px solid #fccd10;
+      width: auto; }
+    body div#content .img-right {
+      display: block;
+      float: right;
+      padding: 2px;
+      margin: 0px 0px 10px 10px;
+      border: 2px solid #fccd10; }
+  body table {
+    border: #94a34e;
+    background: #677d01;
+    width: 95%; }
+    body table th, body table td {
+      border-bottom: 1px solid #94a34e;
+      padding: 10px 0 10px 20px; }
+    body table caption {
+      text-align: right;
+      color: #000000; }
+    body table th {
+      text-transform: uppercase;
+      background-color: #94a34e;
+      text-align: left;
+      font-weight: normal; }
+  body p {
+    font-size: 16px; }
+  body a {
+    color: #f5c70f; }
+  body .brief {
+    display: inline-block;
+    float: left;
+    background-color: #fff178;
+    width: 96%;
+    margin: 0 0 40px 0;
+    padding: 20px 20px;
+    color: #000000; }
+  body form {
+    color: #fccd10;
+    margin-left: -5px;
+    width: 106%; }
+    body form label[for=fname] {
+      display: block;
+      float: left;
+      margin-left: 5px; }
+    body form input[type=text] {
+      width: 46.2%;
+      display: block;
+      float: left;
+      margin: 5px 0 5px 5px;
+      border: 1px solid #94a34e;
+      padding: 5px; }
+    body form label[for=lname] {
+      display: block;
+      float: left;
+      margin-left: 44.5%; }
+    body form label[for=email] {
+      display: block;
+      float: left;
+      margin-left: 5px; }
+    body form input[type=email] {
+      width: 94%;
+      display: block;
+      float: left;
+      margin: 5px 0 5px 5px;
+      border: 1px solid #94a34e;
+      padding: 5px; }
+    body form label[for=mark] {
+      display: block;
+      float: left;
+      margin-top: 6px;
+      margin-left: 5px; }
+    body form input[name="mark"] {
+      width: 94%;
+      display: block;
+      float: left; }
+    body form label[for=subject] {
+      display: block;
+      float: left;
+      margin-left: 5px; }
+    body form textarea[id=subject] {
+      display: block;
+      float: left;
+      width: 94%;
+      height: 120px;
+      margin: 5px 0 5px 5px;
+      border: 1px solid #94a34e;
+      padding: 5px; }
+    body form input[type=submit] {
+      font-size: 16px;
+      display: block;
+      float: left;
+      background-color: #3b3b3b;
+      border: 1px solid #f5c70f;
+      color: #f5c70f;
+      padding: 14px 70px;
+      text-decoration: none;
+      margin: 20px 0 0 5px;
+      cursor: pointer; }
