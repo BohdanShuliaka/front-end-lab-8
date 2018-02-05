@@ -1,0 +1,384 @@
+
+@media (min-width: 901px) {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    width: 100%;
+    height: 100%;
+    background: url("../img/banner.jpg") no-repeat;
+    background-position: 0px 100px;
+    background-size: contain;    
+}
+.main-content {
+    width: 70%;
+    margin: 0 auto;
+}
+.top-logo {
+    float: left;
+    margin: 20px 50px 20px 0px;
+}
+.top-nav {
+    float: left;
+    margin: 35px 0 45px 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+    margin-right: 20px;
+}
+li a {   
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #464547;
+}
+li a:hover {
+    color: #39c2d7;
+}
+section.intro {
+    float: left;
+    width: 350px;
+    margin: 50px 0 12% 0;
+}
+h1 {
+    color: white;
+}
+section.news {
+    width: 100%;
+    padding-top: 10%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+section.news div {
+    width: 32%;
+    height: 250px;
+    background-color: #cccccc;
+    margin-bottom: 20px;  
+}
+section.news div:hover {
+    background-color: #39c2d7;
+}
+section.news div img {
+    width: 92%;
+    padding: 10px 10px 10px 10px;
+}
+h4 {
+    margin: 0 3% 0 3%;
+}
+section.news div p {
+    margin: 3% 3% 0 3%;
+    font-size: 14px;
+}
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: #39c2d7;
+}
+.footer-nav {
+    position: relative;
+    width: 100%;
+    margin: 0 150px;   
+}
+.footer-ul{
+    margin-left: 20px;
+    float: left;
+    padding: 10px 0 0 40px;
+}
+.footer-ul li {
+    margin-top: 10px;
+    display: inline;
+    
+}
+.footer-ul li a {   
+    text-align: center;
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: 12px;
+    color: white;
+}
+.footer-ul li a:hover {
+    text-decoration: none;
+}
+.copyright {
+    float: left;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 12px;
+    color: white;
+    margin-top: 14px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+}
+@media (min-width: 575px) and (max-width: 900px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        height: 100%;
+        background: url("../img/banner.jpg") no-repeat;
+        background-position: -220px 120px;
+        background-size: 140% 25%; 
+    }
+    .main-content {
+        width: 100%;       
+    }
+    .top-logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 2%;
+    }
+    .top-nav {
+        display: block;
+        margin: 80px 20% 90px 0;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 130%;
+        text-align: center;
+    }
+    li {
+        display: inline;
+        margin-right: 10px;
+    }
+    li a {   
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        color: #464547;
+    }
+    li a:hover {
+        color: #39c2d7;
+    }
+    section.intro {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 37%;
+        color: white;
+        font-size: 80%;
+        font-weight: normal;
+        text-align: center;
+    }
+    section.news {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    section.news div {
+        width: 48%;
+        height: 270px;
+        background-color: #cccccc;
+        margin-bottom: 20px; 
+    }
+    section.news div:hover {
+        background-color: #39c2d7;
+    }
+    section.news div img {
+        width: 80%;
+        padding: 10px 15% 10px 10%;
+    }
+    h4 {
+        margin: 0 3% 0 3%;
+    }
+    section.news div p {
+        margin: 3% 3% 0 3%;
+        font-size: 14px;
+    }
+    footer {
+        width: 100%;
+        height: 90px;
+        background-color: #39c2d7;
+    }
+    .footer-nav {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;       
+    }
+    .footer-ul{
+        width: 100%;
+        position: relative;
+        text-align: center;
+        padding: 20px 0 50px 0;       
+    }
+    .footer-ul li {
+        display: inline;    
+    }
+    .footer-ul li a {   
+        text-align: center;
+        text-decoration: underline;
+        font-weight: normal;
+        font-size: 14px;
+        color: white;
+        font-weight: bold;
+    }
+    .footer-ul li a:hover {
+        text-decoration: none;
+    }
+    .copyright {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 14px;
+        color: white;
+        margin-top: 13px;
+        font-weight: bold;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+@media (max-width: 575px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        height: 100%;
+        background: url("../img/banner.jpg") no-repeat;
+        background-position: -50px 220px;
+        background-size: 675px 250px; 
+    }
+    .main-content {
+        width: 100%;    
+    }
+    .top-logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 2%;
+    }
+    .top-nav {
+        display: block;
+        margin: 80px 0 90px 0;
+    }
+    .top-nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: left;
+    }
+    .top-nav ul li {
+        padding: 10px 0 10px 25px;
+        background-color: rgb(238, 238, 238);
+        border-bottom: 1px solid #cccccc;
+    }
+    .top-nav ul li:first-child {
+        border-top: 1px solid #cccccc;
+    }
+    .top-nav ul li a {   
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        color: #464547;
+    }
+    section.intro {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 150px;
+        margin-bottom: 10%;
+        padding: 5px 0 3px 10px;
+        color: white;
+        background-color: #33cccc;
+        font-size: 50%;
+        text-align: left;
+    }
+    section.news {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    section.news div {
+        width: 95%;
+        height: 100%;
+        background-color: #cccccc;
+        margin-bottom: 20px;     
+    }
+    section.news div img {
+        width: 80%;
+        padding: 10px 15% 10px 10%;
+    }
+    h4 {
+        margin: 0 3% 0 3%;
+        color: #333333;
+    }
+    section.news div p {
+        margin: 1% 3% 2% 3%;
+        font-size: 14px;
+        color: #333333;
+    }
+    footer {
+        width: 100%;
+        height: 155px;
+        background-color: #39c2d7;
+    }
+    .footer-nav {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;   
+    }
+    .footer-ul{
+        width: 100%;
+        position: relative;
+        text-align: center;
+        padding: 20px 0 50px 0;   
+    }
+    .footer-ul li {
+        display: block;
+        background-color: none; 
+        margin: 5px;   
+    }
+    .footer-ul li a {   
+        text-align: center;
+        text-decoration: underline;
+        font-size: 14px;
+        color: white;
+        font-weight: bold;
+        
+    }
+    .copyright {   
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        color: white;
+        margin-top: 40px;
+        font-weight: bold;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
