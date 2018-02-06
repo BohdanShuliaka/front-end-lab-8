@@ -352,7 +352,7 @@ footer {
     }
     .footer-ul li {
         display: block;
-        background-color: none; 
+        background-color: transparent; 
         margin: 5px;   
     }
     .footer-ul li a {   
