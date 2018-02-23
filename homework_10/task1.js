@@ -1,9 +1,10 @@
-/**
- * Your debounce function goes here
- * function(){}
- */
-
-// Example
+function debounce(callback, delay) {
+  let timeout;
+  return function() {
+           clearTimeout(timeout); 
+           timeout = setTimeout(callback, delay);
+  }
+}
 
 let iterator = 0;
 
@@ -27,4 +28,4 @@ increaseIterator();
 increaseIterator();
 increaseIterator();
 increaseIterator();
-increaseIterator(); // Should print 'Iterator value 2'
+increaseIterator();
