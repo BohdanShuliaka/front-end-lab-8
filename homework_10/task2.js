@@ -40,7 +40,7 @@ function fighter(commonFighter) {
         return commonFighter.name;
       },
       block: function() {
-        return (Math.random() > 0.5);
+        return (Math.random() >= 0.5);
       },
       getStats: function() {
         return commonFighter;
