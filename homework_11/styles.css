@@ -1,28 +1,21 @@
-/* Your styles goes here */
-
-
- .visible{
-    display: block;
-  }
-  
-  ul {
+   ul {
     list-style: none;
     padding-left: 10px;
     cursor: pointer;
   }
-  
   div ul li ul {
     display: none;
   }
-  
   div ul span {
     vertical-align: super;
   }
   
   .material-icons{
-    color: #bcbcbc;
+    color: #b1b1b1;
   }
-  
   .material-icons.folder{
-    color: #edbc0c;
+    color: #eebd1d;
   } 
+ .visible{
+    display: block;
+  }
