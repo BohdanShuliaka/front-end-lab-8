@@ -1,1 +1,0 @@
-Remove this folder (homework_11/animations/) before publishing your homework 
