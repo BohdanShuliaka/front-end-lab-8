@@ -2,7 +2,6 @@ var Arthas = new Champion({name: 'Arthas', attack: 70, hitpoints: 900});
 var Deathwing = new Monster({name: 'Deathwing', attack: 60, hitpoints: 1100});
 var Uther = new Champion({name: 'Uther', attack: 50, hitpoints: 1060});
 var KelThuzad = new Monster({name: 'KelThuzad', attack: 100, hitpoints: 800});
-
 var Thrall = new Champion({name: 'Thrall', attack: 45, hitpoints: 1200});
 var Malganis = new Monster({name: 'Malganis', attack: 75, hitpoints: 1200});
 
@@ -24,7 +23,6 @@ function textLayer(text) {
     document.getElementsByClassName('Battle_log')[0].appendChild(p);
     p.innerText = text;
     } 
-
         if (player1 === player2) {
             throw new TypeError(alert('Incorrect input!')); 
         };
@@ -79,4 +77,4 @@ if(!player1.isAlive()){
 }     
 }
 
-//battleSimulation();
+//battleSimulation(Thrall, KelThuzad);

@@ -1,4 +1,3 @@
-
 function assign(target, args) {  
  'use strict';
  if (target == null) {
@@ -92,7 +91,7 @@ function Monster() {
     this.enrageState = false;
 }
 Monster.prototype = Object.create(Unit.prototype);
-Monster.prototype.constructor = Champion;
+Monster.prototype.constructor = Monster;
 
 Monster.prototype.enrage = function() {
     this.enrageCounter = 2;
