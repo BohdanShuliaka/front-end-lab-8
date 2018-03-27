@@ -78,6 +78,5 @@ if(!player1.isAlive()){
     textLayer(`${player1.name} Wins!`);
 }     
 }
-//battleSimulation(Uther, KelThuzad);
-//battleSimulation(Deathwing, KelThuzad);
-battleSimulation(KelThuzad, Thrall);
+
+//battleSimulation();

@@ -1,38 +1,24 @@
-// TODO: remove layout comments before submitting homework
-// Task 1
-// function assign(target, args) {  
-//  'use strict';
-//  if (target == null) { // TypeError if undefined or null
-//    throw new TypeError('Cannot convert undefined or null to object');
-//  }
+
+function assign(target, args) {  
+ 'use strict';
+ if (target == null) {
+   throw new TypeError('Cannot convert undefined or null to object');
+ }
  
-//  var to = Object(target);
+ var to = Object(target);
  
-//  for (var i = 1; i < arguments.length; i++) {
-//    var nextSource = arguments[i];
- 
-//    if (nextSource != null) { // Skip over if undefined or null
-//      for (var nextKey in nextSource) {
-//        // Avoid bugs when hasOwnProperty is shadowed
-//        if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
-//          to[nextKey] = nextSource[nextKey];
-//          }
-//         }
-//       }
-//     }
-//     return to;
-//    };
-
-
-// var defaults = { width: 100, height: 100 };
-// var options = { width: 150 };
-// var configs = assign({}, defaults, options);
-// console.log(configs);
-
-
-
-// Task 2
-
+ for (var i = 1; i < arguments.length; i++) {
+   var nextSource = arguments[i]; 
+   if (nextSource != null) {
+     for (var nextKey in nextSource) {
+       if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
+         to[nextKey] = nextSource[nextKey];
+         }
+        }
+      }
+    }
+    return to;
+   };
 
 function Unit({name, attack, hitpoints}) {
     this.name = name;
@@ -129,34 +115,3 @@ Monster.prototype.victoryBonus = function(opponent) {
     this.setHitpoints(Math.floor(this.getHitpoints() + (opponent.getTotalHitpoints() / 4 )));
     this.setTotalHitpoints(Math.floor(this.getTotalHitpoints() + (opponent.getTotalHitpoints() / 10 )));
 }
-
-var hunter = new Champion({name: 'Rexxar', attack: 10, hitpoints: 60});
-var beast = new Monster({name: 'King Krush', attack: 8, hitpoints: 80});
-
-console.log(beast.getHitpoints()); 
-
-console.log(hunter.fight(beast));
-console.log(beast.getHitpoints()); // -> 70
-console.log(beast.enrage());
-
-console.log(hunter.fight(beast));
-
-console.log(beast.getHitpoints()); // -> 60
-console.log(beast.fight(hunter));
-
-console.log(beast.getAttack());   // 16
-console.log(hunter.getHitpoints()); // -> 44
-
-console.log(hunter.fight(beast));
-console.log(hunter.fight(beast));
-console.log(hunter.fight(beast));
-console.log(hunter.fight(beast));
-
-console.log(beast.getHitpoints());
-
-console.log(hunter.fight(beast));
-console.log(beast.isAlive()); // -> false
-console.log(hunter.getAttack()); // -> 11
-console.log(hunter.getHitpoints()); // -> 44
-console.log(hunter.heal());
-console.log(hunter.getHitpoints()); // -> 49
