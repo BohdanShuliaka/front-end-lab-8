@@ -6,6 +6,10 @@ let validation = document.getElementById("validate");
 let response = document.getElementById("validationText");
 let clear = document.getElementById("clear");
 
+let mapCanvas = document.getElementById("googleMap");
+let latitude = 0;
+let longitude = 0;
+
 let validationParameters = {};
 
 document.getElementById("track").onclick = function showLocation() {
@@ -18,6 +22,7 @@ document.getElementById("track").onclick = function showLocation() {
     loader.classList.add("hidden");
     error.classList.remove("hidden");
     validation.classList.add("hidden");
+    mapCanvas.classList.add("hidden");
     if (tableNode !== null) {
       tableNode.innerHTML = "";
     }
@@ -32,7 +37,11 @@ document.getElementById("track").onclick = function showLocation() {
       validationParameters = data;
       loader.classList.add("hidden");
       validation.classList.remove("hidden");
-    
+      latitude = data.latitude;
+      longitude = data.longitude;
+
+      myMap(latitude, longitude);
+      mapCanvas.classList.remove("hidden");
     })
     .catch(error => {
       console.log(error);
@@ -74,17 +83,22 @@ document.getElementById("clear").onclick = function clear() {
   tableNode.innerHTML = "";
   response.classList.add("hidden");
   ipInput.value = "";
+  mapCanvas.classList.add("hidden");
 };
 
 function ValidateIPaddress(ipaddress) {
-  if (
-    /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(
-      ipaddress
-    )
-  ) {
+  if (/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(ipaddress)) 
+  {
     return true;
   } else {
     return false;
   }
 }
 // console.log(ValidateIPaddress('46.200.239.43'));
+function myMap(latitude, longitude) {
+  let mapOptions = {
+    center: new google.maps.LatLng(latitude, longitude),
+    zoom: 10
+  };
+  let map = new google.maps.Map(mapCanvas, mapOptions);
+}

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,15 +12,27 @@
     <div class="wrapper">
         <h1>IP TRACKER</h1>
         <input type="text" id="ipInput" placeholder="Enter IP-address">
-            <br>
+        <br>
         <span id="error" class="hidden">Please enter valid IP address</span>
-            <br>
+        <br>
         <button type="button" type="submit" id="track">TRACK IT UP!!!</button>
-        <div id="table-content"></div>    
-        <div id="loader" class="hidden"></div>      
+        
+        <div id="loader" class="hidden" >
+            <div class="circle circle-1"></div>
+            <div class="circle circle-1a"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <div class="circle circle-1"></div>
+            <div class="circle circle-1a"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
+
+        <div id="table-content"></div>
+        <div id="googleMap" class="hidden"></div>
         <div>
             <button type="button" id="validate" class="hidden">Validation</button>
-                <br>
+            <br>
             <p id="validationText" class="hidden"></p>
         </div>
         <button type="button" id="clear" class="hidden">CLEAR</button>
@@ -30,6 +41,7 @@
 
     <script src="js/task1.js"></script>
     <script src="js/task2.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDYYSno7IDkYSM3DoCQF5UrtY7HSu3SEE&callback=myMap"></script>
 </body>
 
 </html>
