@@ -1,0 +1,100 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(140, 176, 197);
+}
+.hidden {
+    /* visibility: hidden; */
+    display: none;
+  }
+h1 {
+  color: white;
+}
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+tr:nth-child(odd) {
+  background-color: #ffffff
+}
+.wrapper {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+input[type=text] {
+  width: 100%;
+  border: 2px solid rgb(89, 224, 172);
+  border-radius: 4px;
+  height: 30px;
+}
+input[type=text]:focus {
+  border: 3px solid rgb(255, 108, 108);
+}
+button {
+  background-color: rgb(89, 224, 172);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}
+#error {
+  color: rgb(194, 67, 67);
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 24px;
+}
+#validationText {
+  color: rgb(0, 99, 0);
+  width: 100%;
+  text-align: center;
+  padding-top: 0;
+  font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+#loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
