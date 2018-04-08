@@ -1,0 +1,119 @@
+.table {
+  width: 450px;
+  margin: 100px auto;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px lightgray;
+}
+.col {
+  background-color: #9c6c0280;
+  height: 30px;
+  width: 30px;
+  float: left;
+  position: relative;
+}
+.row {
+  height: 30px;
+}
+.col:hover {
+  background-color: rgba(119, 112, 112, 0.6);
+}
+.col:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid rgb(255, 255, 255);
+  transform: translate(0);
+}
+.col:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 1px solid rgb(255, 255, 255);
+  transform: translate(-50%);
+}
+.colorCircle {
+  height: 30px;
+  width: 30px;
+  background-color: rgba(187, 187, 187, 0);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+.blackCircle {
+  display: block;
+  background-color: black;
+  -background-image: url(img/Gomoku_stones.png);
+}
+.whiteCircle {
+  display: block;
+  background-color: rgb(255, 255, 255);
+  -background-image: url(img/Gomoku_stones.png);
+}
+.counter {
+  text-align: center;
+  height: 50px;
+  background-color: #7c7e2780;
+  color: white;
+  font-size: 26px;
+  padding-top: 15px;
+}
+.container {
+  width: 450px;
+  margin: 0 auto;
+  position: relative;
+}
+.white {
+  float: left;
+  cursor: pointer;
+}
+.black {
+  float: right;
+  cursor: pointer;
+}
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  position: absolute;
+  top: 35px;
+  right: 140px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  position: absolute;
+  top: 35px;
+  left: 140px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.announce {
+  display: none;
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  background-color: rgba(10, 3, 3, 0.877);
+  color: white;
+  text-align: center;
+}
+.announce h1 {
+  cursor: pointer;
+}
+.announce p {
+  cursor: pointer;
+}
