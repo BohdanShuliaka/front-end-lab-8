@@ -6,7 +6,8 @@ class ColorsTable extends Component {
                    { 
                     this.props.current.map(item => {
                         return (
-                        <div className="color-item" 
+                        <div key={item.id}
+                             className="color-item" 
                              style={{'backgroundColor':item.color}}>
                         <div className="add-icon" 
                              onClick={() => this.props.handleAdd(item)}>
