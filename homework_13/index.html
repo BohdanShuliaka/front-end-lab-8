@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework_13</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+
+    <header class="app-header">
+        <h1 class="app-title">{{ appTitle }}</h1>
+        <h3 class="app-headline">{{ appHeadline }}</h3>
+    </header>
+    <div class="container row">
+        <div class="column">
+            <div ng-repeat="post in (layoutPosts | filter:{title: search})">
+                <div class="container" ng-class="{editable: post.editable}">
+                    <div class="image" style="background-image: url({{post.url}})" alt={{post.title}}>
+                        <div class="title">
+                            <h2 class="post-title" ng-show="!post.editable">{{post.title}}</h2>
+                            <span ng-show="post.editable">Title:
+                                <input type='text' ng-model="post.title" />
+                            </span>
+                        </div>
+                    </div>
+                    <div class="categories">
+                        <p class="category-item" ng-show="!post.editable" ng-repeat="category in post.categories">{{category}}</p>
+                    </div>
+                    <div class="post-description">
+                        <p ng-show="!post.editable">{{post.description}}</p>
+                        <span ng-show="post.editable">Description:
+                            <textarea ng-model="post.description"></textarea>
+                        </span>
+                    </div>
+
+                    <button class="edit-blog" ng-show="!post.editable" ng-click="post.editable = true">Edit</button>
+                    <p class="edit-blog" ng-show="post.editable" ng-click="(post.title  && post.description) ? edit(post) : post.error = true">Save</p>
+                    <p class="error" ng-show="post.error">Please fill required fields</p>
+                </div>
+            </div>
+        </div>
+        <div class="column side" class="categories">
+            <h3>Categories</h3>
+            <ul ng-repeat="categorie in categories">
+                <li class="categories-li" ng-click="filter(categorie)">{{categorie}}</li>
+            </ul>
+            <div class="search">
+            <h4>Search by title</h4>
+            <input type="text" placeholder="Blog title" ng-model="search" class="form-control">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="add row">
+        <div class="column-2">
+            <button class="add-button" ng-show="!addActive" ng-click="addActive=true; newTitle=''; newCategories=''; newDescription=''">
+                <span>Add Post</span>
+            </button>
+            <div class="add-container" ng-show="addActive">
+                <div class="new-post-input">
+                    <h3>Title</h3>
+                    <input type="text" placeholder="Title" ng-model="newTitle">
+                </div>
+                <div class="new-post-input">
+                    <h3>Categories</h3>
+                    <input type="text" placeholder="Categories" ng-model="newCategories">
+                </div>
+                <div class="new-post-input description">
+                    <h3>Description</h3>
+                    <textarea type="text" placeholder="Description" ng-model="newDescription"></textarea>
+                </div>
+                <div class="new-post-input">
+                    <h3>Photo</h3>
+                    <input type="text" placeholder="Url" ng-model="newPhoto">
+                </div>
+            </div>
+            <button class="add-button" ng-show="addActive" ng-click="(newTitle && newCategories && newDescription) ? addNewPost(newTitle, newCategories, newDescription, newPhoto) : showError=true">Add</button>
+            <p class="error" ng-show="showError">Please fill required fields</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+
+    <script type="text/javascript" src="./lib/angular.min.js"></script>
+    <script src="./src/data.js"></script>
+    <script src="./src/app.js"></script>
+</body>
+
+</html>
