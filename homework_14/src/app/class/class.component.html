@@ -1,0 +1,26 @@
+<tr>
+  <th>#</th>
+  <th>Topic</th>
+  <th>Date</th>
+  <th>Lecturer</th>
+  <th>Actions</th>
+</tr>
+<tr *ngFor="let lesson of lessons; let item=index">
+  <td>{{item + 1}}</td>
+  <td>
+    <input [value]="lesson.topic" [disabled]="!lesson.isEditable" name="lesson.topic">
+  </td>
+  <td>
+    <input [value]="lesson.date" [disabled]="!lesson.isEditable" name="lesson.date">
+  </td>
+  <td>
+    <input [value]="lesson.lecturer" [disabled]="!lesson.isEditable" name="lesson.lecturer">
+  </td>
+  <td>
+    <div>
+      <button *ngIf="!isEditable" (click)="editClass(lesson)">edit</button>
+      <button *ngIf="!isEditable" (click)="deleteClass(lesson, item)">delete</button>
+      <button *ngIf="!isEditable" (click)="saveClass(lesson)">save</button>
+    </div>
+  </td>
+</tr>
